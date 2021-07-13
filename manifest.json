@@ -1,0 +1,21 @@
+{
+  "name": "NNNEasyAcsess",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "'nnn.ed.nico/'にアクセスしたら自動的にログインページにリダイレクトさせるChrome拡張機能",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.nnn.ed.nico/*",
+        "*://nnn.ed.nico/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "host_permissions": [
+    "*://www.nnn.ed.nico/*",
+    "*://nnn.ed.nico/*"
+  ]
+}
